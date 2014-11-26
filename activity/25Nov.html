@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2014 by SaravananRajaraman (http://jsbin.com/kagose/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="container">
+    <lable for="us"> US  :</lable>
+ <input type="number" id="us"/><br><br>
+    <lable for="ind"> IND :</lable>
+  <input type="number" id="ind">
+  <br><br>
+  <button class="btn btn-success">Convert</button>
+  </div>
+<script id="jsbin-javascript">
+$(function(){
+  $("button").on('click',function(){
+  var us=$("#us").val();
+    var indCon=65;
+    var ind=us*indCon;
+  $("#ind").val(ind);
+  });   
+});
+</script>
+</body>
+</html>
